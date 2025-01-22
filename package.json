@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "ts-node-dev --respawn src/index.ts",
+    "dev": "ts-node-dev --respawn --require tsconfig-paths/register src/index.ts",
     "build": "tsup",
     "start": "pnpm build && node dist/index.js",
     "lint": "eslint .",
@@ -20,6 +20,7 @@
     "eslint": "^9.18.0",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
     "tsup": "^8.3.5",
     "typescript": "^5.7.3"
   }
